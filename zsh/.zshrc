@@ -113,8 +113,8 @@ fi
 
 # postgres
 
-export PATH=/ur/lib/postgresql/14/bin/:$PATH
-export PATH=/home/efjay/.cargo/bin:$PATH
+export PATH=/usr/lib/postgresql/14/bin/:$PATH
+export PATH=/home/$USER/.cargo/bin:$PATH
 export FYYUR_DATABASE_SETUP="postgresql://efjay:blackpandan12345#@localhost:5432/fyyur"
 
 if command -v tmux &> /dev/null && [ -z "$TMUX"  ]; then   
@@ -134,7 +134,7 @@ export APEX_EMAIL_PASSWORD='faithn12345#'
 export APEX_DJOSER_DOMAIN='localhost:8080'
 export APEX_EMAIL_SENDER='Apex Verification <admin@apexverification.com>'
 # bun
-export BUN_INSTALL="/home/efjay/.bun"
+export BUN_INSTALL="/home/$USER/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export NVM_DIR="$HOME/.nvm" 
