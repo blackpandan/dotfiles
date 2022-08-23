@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 DISABLE_VENV_CD=1
-plugins=(git cp zsh-autosuggestions)
+plugins=(git cp zsh-autosuggestions colorize)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -111,6 +111,10 @@ if [ -f ~/.bash_aliases  ]; then
 	. ~/.bash_aliases
 fi
 
+#chezmoi 
+
+export PATH=/home/$USER/bin:$PATH
+export PATH=/home/$USER/.local/bin:$PATH
 # postgres
 
 export PATH=/usr/lib/postgresql/14/bin/:$PATH
@@ -145,3 +149,4 @@ export JWT_SECRET='thebearedrat'
 export LOG_LEVEL=DEBUG
 source /etc/profile.d/bash_completion.sh
 
+eval "$(direnv hook zsh)"

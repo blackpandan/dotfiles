@@ -32,7 +32,7 @@ alias deployEnv='source /home/efjay/Desktop/alx/cd0157-Server-Deployment-and-Con
 
 alias luxe="pushd /home/efjay/Desktop/work/luxe"
 alias luxeFrontend="pushd /home/efjay/Desktop/work/luxe/luxe-frontend"
-alias luxeBackend="pushd /home/efjay/Desktop/work/luxe/backend"
+alias luxeBackend="pushd /home/efjay/Desktop/work/luxe/backend/luxe"
 alias luxeEnv="source /home/efjay/Desktop/work/luxe/backend/env/bin/activate"
 
 alias cd="pushd"
