@@ -71,7 +71,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 DISABLE_VENV_CD=1
-plugins=(git cp autoenv zsh-autosuggestions)
+plugins=(git cp zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -144,12 +144,4 @@ export NVM_DIR="$HOME/.nvm"
 export JWT_SECRET='thebearedrat'
 export LOG_LEVEL=DEBUG
 source /etc/profile.d/bash_completion.sh
-source ~/.autoenv/activate.sh
-source ~/.autoenv/activate.sh
-
-export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3.10
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Devel
-export VIRTUALENVWRAPPER_VIRTUALENV=/home/efjay/.local/bin/virtualenv
-source /home/efjay/.local/bin/virtualenvwrapper.sh
 
